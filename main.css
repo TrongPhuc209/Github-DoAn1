@@ -1,0 +1,11 @@
+* {
+    background-color: rgb(186, 186, 186);
+    border: 0;
+    padding: 0;
+}
+
+/* ----------------------- HEADER ----------------------- */
+header {
+    background-color: antiquewhite;
+    height: 90px;
+}
