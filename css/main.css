@@ -2,12 +2,51 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 a{
     color: #000;
+    text-decoration: none;
 }
 
 .header{
     height: 60px;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.header-content{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.header-content .logo a{
+    display: flex;
+}
+
+.header-content .logo a img{
+    width: 150px;
+    justify-content: center;
+}
+
+.header-content .navigation ul{
+    display:flex;
+    list-style-type: none;
+}
+
+.header-content .navigation ul li{
+    padding: 0 10px;
+    line-height: 60px;
+}
+
+.header-content .other{
+    display: flex;
+}
+
+.header-content .other .other-item a img{
+    width: 22px;
+}
+
