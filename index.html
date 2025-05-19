@@ -1,118 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <!-- <link rel="stylesheet" href="./js/main.js"> -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/font/fontawesome-free-6.7.2-web/css/all.min.css">
+	<!-- <link rel="stylesheet" href="./js/main.js"> -->
 </head>
 <body>
-    <div id="main">
-        <div class="header">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="#"><img src="./css/img/logo.webp" alt=""></a>
-                </div>
-                <div class="navigation">
-                    <ul id="nav">
-                        <li class="item"><a href="#">Sản Phẩm</a>
-                            <ul class="menu">
-                                <div class="sub-menu">
-                                    <p class="title-item"><a href="#">Áo</a></p>
-                                    <div class="item-line"></div>
-                                    <p><a href="#">Áo Thun</a></p>
-                                    <p><a href="#">Áo Polo</a></p>
-                                    <p><a href="#">Áo Sơmi</a></p>
-                                    <p><a href="#">Áo Khoác</a></p>
-                                    <p><a href="#">Hoodie</a></p>
-                                </div>
-                                <div class="sub-menu">
-                                    <p class="title-item"><a href="#">Quần</a></p>
-                                    <div class="item-line"></div>
-                                    <p><a href="#">Quần Jean</a></p>
-                                    <p><a href="#">Quần Tây</a></p>
-                                    <p><a href="#">Quần Boxer</a></p>
-                                    <p><a href="#">Quần Kaki & Chino</a></p>
-                                    <p><a href="#">Quần Dài</a></p>
-                                </div>
-                                <div class="sub-menu">
-                                    <p class="title-item"><a href="#">Giày & Phụ Kiện</a></p>
-                                    <div class="item-line"></div>
-                                    <p><a href="#">Giày & Dép</a></p>
-                                    <p><a href="#">Túi, Balo</a></p>
-                                    <p><a href="#">Nón</a></p>
-                                    <p><a href="#">Thắt Lưng</a></p>
-                                    <p><a href="#">Vớ</a></p>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="item"><a href="#">Hàng Mới</a></li>
-                        <li class="item"><a href="#">Áo Nam</a>
-                            <ul class="menu">
-                                <div class="sub-menu">
-                                    <p><a href="#">Áo Thun</a></p>
-                                    <p><a href="#">Áo Polo</a></p>
-                                    <p><a href="#">Áo Sơmi</a></p>
-                                    <p><a href="#">Áo Khoác</a></p>
-                                    <p><a href="#">Hoodie</a></p>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="item"><a href="#">Bộ Sưu Tập</a></li>
-                        <li class="item"><a href="#">Tin Thời Trang</a></li>
-                        <li class="item"><a href="#">Liên Hệ</a></li>
-                    </ul>
-                </div>
-                <div class="other">
-                    <div class="other-item" class="tooltip"><a href="#"><img src="./css/img/searcg-icon.svg" alt=""></a></div>
-                    <div class="other-item"><a href="#"><img src="./css/img/user-account.svg" alt=""></a></div>
-                    <div class="other-item"><a href="#"><img src="./css/img/location.webp" alt=""></a></div>
-                    <div class="other-item"><a href="#"><img src="./css/img/shopping-cart.svg" alt=""></a></div>
-                </div>
-            </div>
-        </div>
-        <div class="main-banner">
-            <div class="banner-item"><a href="#"><img src="./css/img/banne.jpg" alt=""></a></div>
-        </div>
-        
-        <!-- 
-        <div class="sub-intro">
-            <div class="intro-container">
-                <div class="item">
-                    <img src="./css/img/giaohangnhanh.webp" alt="">
-                    <div>
-                        <p1>Miễn phí vận chuyển</p1>
-                        <p2>Đơn từ 250k</p2>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="./css/img/giaohangnhanh.webp" alt="">
-                    <div>
-                        <p1>Miễn phí vận chuyển</p1>
-                        <p2>Đơn từ 250k</p2>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="./css/img/giaohangnhanh.webp" alt="">
-                    <div>
-                        <p1>Miễn phí vận chuyển</p1>
-                        <p2>Đơn từ 250k</p2>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="./css/img/giaohangnhanh.webp" alt="">
-                    <div>
-                        <p1>Miễn phí vận chuyển</p1>
-                        <p2>Đơn từ 250k</p2>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<!-- <div class="dau"></div> -->
+	<div id="main">
+		<div class="header">
+			<div class="header-content">
+				<div class="icon-menu">
+					<a href="#"><img src="./css/img/menu.png" alt=""></a>
+					<div class="main-menu">
+						<div class="head-menu">
+							<a href="#"><img src="./css/img/logo.webp" alt=""></a>
+						</div>
+						<div class="content-menu">
+							<ul>
+								<a href="#" class="item">
+									<li>Sản Phẩm</li>
+									<i class="fa-solid fa-arrow-right"></i>
+								</a>
+								<a href="#" class="item">
+									<li>Hàng Mới</li>
+									<i class="fa-solid fa-arrow-right"></i>
+								</a>
+								<a href="#" class="item">
+									<li>Áo Nam</li>
+									<i class="fa-solid fa-arrow-right"></i>
+								</a>
+								<a href="#" class="item">
+									<li>Bộ Sưu Tập</li>
+									<i class="fa-solid fa-arrow-right"></i>
+								</a>
+								<a href="#" class="item">
+									<li>Tin Thời Trang</li>
+									<i class="fa-solid fa-arrow-right"></i>
+								</a>
+								<a href="#" class="item">
+									<li>Liên Hệ</li>
+									<i class="fa-solid fa-arrow-right"></i>
+								</a>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+				<div class="logo">
+					<a href="#">
+						<img src="./css/img/logo.webp" alt="">
+					</a>
+				</div>
+				<div class="navigation">
+					<ul id="nav">
+						<li class="item"><a href="#">Sản Phẩm</a>
+							<ul class="menu">
+								<div class="sub-menu">
+									<p class="title-item"><a href="#">Áo</a></p>
+									<div class="item-line"></div>
+									<p><a href="#">Áo Thun</a></p>
+									<p><a href="#">Áo Polo</a></p>
+									<p><a href="#">Áo Sơmi</a></p>
+									<p><a href="#">Áo Khoác</a></p>
+									<p><a href="#">Hoodie</a></p>
+								</div>
+								<div class="sub-menu">
+									<p class="title-item"><a href="#">Quần</a></p>
+									<div class="item-line"></div>
+									<p><a href="#">Quần Jean</a></p>
+									<p><a href="#">Quần Tây</a></p>
+									<p><a href="#">Quần Boxer</a></p>
+									<p><a href="#">Quần Kaki & Chino</a></p>
+									<p><a href="#">Quần Dài</a></p>
+								</div>
+								<div class="sub-menu">
+									<p class="title-item"><a href="#">Giày & Phụ Kiện</a></p>
+									<div class="item-line"></div>
+									<p><a href="#">Giày & Dép</a></p>
+									<p><a href="#">Túi, Balo</a></p>
+									<p><a href="#">Nón</a></p>
+									<p><a href="#">Thắt Lưng</a></p>
+									<p><a href="#">Vớ</a></p>
+								</div>
+							</ul>
+						</li>
+						<li class="item"><a href="#">Hàng Mới</a></li>
+						<li class="item"><a href="#">Áo Nam</a>
+							<ul class="menu">
+								<div class="sub-menu">
+									<p><a href="#">Áo Thun</a></p>
+									<p><a href="#">Áo Polo</a></p>
+									<p><a href="#">Áo Sơmi</a></p>
+									<p><a href="#">Áo Khoác</a></p>
+									<p><a href="#">Hoodie</a></p>
+								</div>
+							</ul>
+						</li>
+						<li class="item"><a href="#">Bộ Sưu Tập</a></li>
+						<li class="item"><a href="#">Tin Thời Trang</a></li>
+						<li class="item"><a href="#">Liên Hệ</a></li>
+					</ul>
+				</div>
+				<div class="other">
+					<div class="other-item" class="tooltip"><a href="#"><img src="./css/img/searcg-icon.svg" alt=""></a></div>
+					<div class="other-item"><a href="#"><img src="./css/img/user-account.svg" alt=""></a></div>
+					<div class="other-item"><a href="#"><img src="./css/img/location.webp" alt=""></a></div>
+					<div class="other-item"><a href="#"><img src="./css/img/shopping-cart.svg" alt=""></a></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 
+		<div class="main-banner">
+			<div class="banner-item"><a href="#"><img src="./css/img/banne.jpg" alt=""></a></div>
+		</div>
+		
+		
+		<div class="sub-intro">
+			<div class="intro-container">
+				<div class="item">
+					<img src="./css/img/giaohangnhanh.webp" alt="">
+					<div>
+						<p1>Miễn phí vận chuyển</p1>
+						<p2>Đơn từ 250k</p2>
+					</div>
+				</div>
+				<div class="item">
+					<img src="./css/img/giaohangnhanh.webp" alt="">
+					<div>
+						<p1>Miễn phí vận chuyển</p1>
+						<p2>Đơn từ 250k</p2>
+					</div>
+				</div>
+				<div class="item">
+					<img src="./css/img/giaohangnhanh.webp" alt="">
+					<div>
+						<p1>Miễn phí vận chuyển</p1>
+						<p2>Đơn từ 250k</p2>
+					</div>
+				</div>
+				<div class="item">
+					<img src="./css/img/giaohangnhanh.webp" alt="">
+					<div>
+						<p1>Miễn phí vận chuyển</p1>
+						<p2>Đơn từ 250k</p2>
+					</div>
+				</div>
+			</div>
+		</div>
 
 -->
-
-        <div id="cuoi"></div> 
-    </div>
+	</div>
 </body>
 </html>
