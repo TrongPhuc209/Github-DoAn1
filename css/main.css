@@ -6,7 +6,8 @@
 }
 
 .header{
-    /* position: fixed; */
+	/* position: relative;
+	z-index: 10; */
     height: 60px;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -123,13 +124,15 @@
 .header-content .navigation{
     overflow: hidden;
     white-space: nowrap;
-    width: 100%;
+    width: 70%;
     padding-left: 40px;
 }
 
 
 .header-content .other{
-    display: flex;
+    display: inline-flex;
+	/* flex-wrap: wrap;
+	width: 25%; */
 }
 
 .header-content .other-item{
@@ -148,6 +151,11 @@
 }
 
 /* Banner */
+.main-banner .banner-item-DT {
+	width: 100%;
+	display: none;
+}
+
 .main-banner img{
     width: 100%;
 }
@@ -207,10 +215,6 @@
         align-items: center;
     }
 
-		.header-content .icon-menu:active .main-menu{
-			display: block;
-		}
-
     .header-content .logo{
         width: 100%;
     }
@@ -223,8 +227,12 @@
         width: 340px;
         height: 120vh;
         box-shadow: 4px 0 8px rgba(0, 0, 0, 0.6);
-		display: none;
     }
+
+	#show-main-menu{
+		display: none;
+		z-index: 10;
+	}
 
     .main-menu .head-menu{
         height: 60px;
@@ -260,15 +268,34 @@
 		list-style-type: none;
 	}
     
+	
 
 }
 
-@media (max-width: 767px){
+@media (max-width: 480px){
     body{
         background-color: bisque;
     }
+
+	.main-banner .banner-item {
+		display: none;
+	}
+
+	.main-banner .banner-item-DT {
+		display: block;
+	}
 }
 
+.black-background{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	z-index: 1;
+}
 
 
 .dau{

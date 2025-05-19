@@ -1,19 +1,22 @@
-const ul = document.getElementById("nav-header");
+function showMainMenu(){
+    const menu = document.getElementById("show-main-menu");
+    const blackBg = document.querySelector(".black-background");
+    if(menu.style.display === "none" ){
+        menu.style.display = "block";
+        blackBg.style.display = "block";
+    }  else{
+        menu.style.display = "none";
+        blackBg.style.display = "none";
+    }
 
-const handleResize = () => {
-    const containerWidth = ul.parentElement.offsetWidth;
-    let totalWidth = 0;
-
-    Array.from(ul.children).forEach((li) => {
-        totalWidth += li.offsetWidth + 10; // 10 là khoảng cách giữa các thẻ <li>
-
-        if (totalWidth > containerWidth) {
-            li.style.display = "none";
-        } else {
-            li.style.display = "block";
-        }
+    menu.addEventListener("click", (e) =>{
+        e.stopPropagation();
     });
-};
 
-window.addEventListener("resize", handleResize);
-handleResize(); // Chạy một lần khi load trang
+}
+
+document.querySelector(".black-background").addEventListener("click", () => {
+    // Ẩn cả menu và màn đen khi click vào nền đen
+    document.getElementById("show-main-menu").style.display = "none";
+    document.querySelector(".black-background").style.display = "none";
+});
