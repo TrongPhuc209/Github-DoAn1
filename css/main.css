@@ -175,7 +175,7 @@ body {
 /* ----------------------------------- */
 /* ----------------------------------- */
 .sub-intro {
-  margin-top: 10px;
+  margin-top: 50px;
   display: flex;
   height: auto;
   width: 100%;
@@ -236,7 +236,7 @@ body {
 /* ----------------------------------- */
 
 .sub-banner {
-  margin: 5px 0;
+  margin-top: 30px;
   display: flex;
   height: auto;
   justify-content: center;
@@ -347,6 +347,54 @@ body {
   font-weight: bold;
 }
 
+/* ----------------------------------- */
+/* ----------------------------------- */
+
+.see-more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.see-more .see-more-bottom {
+  height: 60px;
+  width: 160px;
+  border: 2px solid #1e1d1d;
+  border-radius: 10px;
+}
+
+.see-more-bottom .see-more-content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.see-more-bottom .see-more-content {
+  text-decoration: none;
+}
+
+.see-more-bottom .see-more-content li {
+  color: #000;
+  list-style-type: none;
+  padding-right: 8px;
+  padding: 0 6px;
+}
+
+.see-more-bottom .see-more-content:hover {
+  background-color: #000000;
+  border-radius: 7px;
+}
+
+.see-more-bottom .see-more-content:hover li {
+  color: #fff;
+}
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+
 @media (max-width: 1515px) {
   .product {
     height: auto;
@@ -386,6 +434,7 @@ body {
   }
 }
 
+/* Tablet */
 @media (max-width: 1024px) {
   body {
     background-color: #d48f8f;
@@ -461,7 +510,7 @@ body {
   .content-menu a {
     color: #000;
     text-decoration: none; /* bỏ dấu gạch chân */
-    list-style-type: none;
+    list-style-type: none; /* bỏ dấu chấm trước thẻ li */
   }
 
   .main-menu .content-menu .toolbar {
@@ -572,6 +621,13 @@ body {
     height: 400px;
     min-height: 200px;
   }
+
+  /* ----------------------------------- */
+  /* ----------------------------------- */
+
+  .see-more {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -589,6 +645,10 @@ body {
 }
 
 @media (max-width: 380px) {
+  .product {
+    height: 305px;
+    min-height: 300px;
+  }
   .product .product-container {
     height: 300px;
     min-height: 200px;
@@ -610,6 +670,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .main-line .line-container {
