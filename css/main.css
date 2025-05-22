@@ -185,6 +185,7 @@ body {
 
 .header-content .other {
   display: inline-flex;
+  overflow: hidden;
   /* flex-wrap: wrap;
 	width: 25%; */
 }
