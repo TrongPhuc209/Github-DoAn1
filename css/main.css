@@ -55,7 +55,6 @@ body {
 }
 
 #main {
-  height: 9000px;
   max-width: 1600px;
 }
 
@@ -440,6 +439,118 @@ body {
 /* ----------------------------------- */
 /* ----------------------------------- */
 
+.follow {
+  width: 100%;
+  height: 28vh;
+  display: flex;
+  justify-content: center;
+}
+
+.follow .follow-container {
+  width: 95%;
+  max-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 5px;
+}
+
+.follow-container .item {
+  max-height: 100%;
+  max-width: calc((100% - 40px) / 5);
+  border-radius: 5px;
+}
+
+.follow-container .item a {
+  max-height: 100%;
+  max-width: 100;
+}
+
+.follow-container .item img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* ----------------------------------- */
+.footer {
+  margin-top: 20px;
+  background-color: #001f5d;
+  max-width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.footer li {
+  list-style-type: none;
+  color: #fff;
+  padding: 5px;
+}
+
+.footer li:hover {
+  color: #ff6310;
+  transform: translatey(-1.5px);
+}
+
+.footer p {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.footer i {
+  text-align: center;
+}
+
+.footer input {
+  border: none;
+  outline: none;
+  background-color: #001f5d;
+  border-bottom: #000 1px solid;
+  padding: 8px 0;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer .icon {
+  gap: 10px;
+}
+
+.footer .icon li {
+  font-size: 19px;
+}
+
+.footer .footer-container {
+  max-width: 96%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 15px;
+  gap: 20px;
+}
+
+.footer-container .footer-content ul {
+  display: flex;
+}
+
+.footer-container .footer-content img {
+  max-height: 60px;
+}
+
+#footer-connect {
+  display: block;
+}
+
+/* ----------------------------------- */
+
 @media (max-width: 1515px) {
   .product {
     height: auto;
@@ -585,7 +696,6 @@ body {
   }
 
   /* ----------------------------------- */
-  /* ----------------------------------- */
 
   .main-banner1 .banner1-container .desktop {
     display: none;
@@ -596,9 +706,13 @@ body {
   }
 
   /* ----------------------------------- */
-  /* ----------------------------------- */
   .product .product-container {
     height: 500px;
+  }
+
+  /* ----------------------------------- */
+  .follow {
+    height: 18vh;
   }
 }
 
@@ -660,7 +774,6 @@ body {
   }
 
   /* ----------------------------------- */
-  /* ----------------------------------- */
 
   .product .product-container {
     height: 400px;
@@ -668,10 +781,15 @@ body {
   }
 
   /* ----------------------------------- */
-  /* ----------------------------------- */
 
   .see-more {
-    margin-top: 20px;
+    margin: 10px 0;
+  }
+
+  /* ----------------------------------- */
+
+  .follow {
+    height: 18vh;
   }
 }
 
