@@ -592,10 +592,6 @@ body {
 
 /* Tablet */
 @media (max-width: 1024px) {
-  body {
-    background-color: #d48f8f;
-  }
-
   /* ----------------------------------- */
   .navigation {
     display: none;
@@ -759,10 +755,6 @@ body {
 
 /* Điện thoại */
 @media (max-width: 480px) {
-  body {
-    background-color: bisque;
-  }
-
   /* ----------------------------------- */
 
   .main-banner .banner-item {
