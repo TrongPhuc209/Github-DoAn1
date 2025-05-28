@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+.header {
+    background: #0a1f44;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.product-detail {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.thumbnail-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnail-list img,
+.main-image img {
+    width: 100px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.main-image img {
+    width: 400px;
+    height: auto;
+}
+
+.product-info {
+    max-width: 500px;
+}
+
+.price {
+    color: red;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.promotion ul {
+    padding-left: 20px;
+}
+
+.voucher-buttons button,
+.sizes button,
+.colors button,
+.form-types button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    cursor: pointer;
+}
+
+.colors .white {
+    background: white;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #000;
+}
+
+.colors .black {
+    background: black;
+    width: 24px;
+    height: 24px;
+}
+
+.form-types .active {
+    background-color: #0a1f44;
+    color: white;
+}
+
+/* PHẦN NÚT MUA + GIỎ */
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-controls button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.quantity-controls span {
+    font-size: 16px;
+    min-width: 24px;
+    text-align: center;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buy-now {
+    background-color: #0a1f44;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.add-to-cart {
+    background-color: white;
+    color: #0a1f44;
+    padding: 12px;
+    border: 2px solid #0a1f44;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-top: 50px;
+}
