@@ -114,6 +114,7 @@ body {
 .item a {
   color: #000;
   text-decoration: none;
+  /* border: #ff6310 2px solid; */
 }
 
 .navigation .menu {
