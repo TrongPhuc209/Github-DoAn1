@@ -207,6 +207,45 @@ body {
 }
 
 /* ----------------------------------- */
+.main-seach {
+  height: 40px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.seach-container {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+
+.seach-container .seach-content {
+  width: 65%;
+  border: 2px #000 solid;
+  display: flex;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.seach-input {
+  width: 90%;
+  border: none;
+  outline: none;
+}
+
+.seach-button {
+  width: 8%;
+  border: none;
+  border-radius: 8px;
+  border: 2px #505050 solid;
+}
+
+/* ----------------------------------- */
 /* ----------------------------------- */
 
 .main-banner img {
